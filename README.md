@@ -1,6 +1,6 @@
 # Incorporate non-compete law changes from Ewens and Marx (2017, RFS)
 
-Ewens and Marx (2018) use a series of state-level law changes in the U.S. from 1995--2016 to study the impact of founder replacement on startup outcomes.  
+Ewens and Marx (2017) use a series of state-level law changes in the U.S. from 1995--2016 to study the impact of founder replacement on startup outcomes.  
 
 ## Stata code
 
