@@ -3,7 +3,7 @@
 
 	Assign non-compete status by state-year.
 
-	Code assumes that the user's state-level data is already loaded. 
+	Code assumes that the user's state-year data is already loaded. 
 
 	Usage: do createCNCvars.do
 
@@ -14,7 +14,6 @@
 
 	Result: Creates 
 
-	`lawChangeYear' = year of states law change
 	`cncChange` = {-1,1} for the direction of the change in the law
 		-1 --> weaker
 		1 --> stronger
@@ -40,8 +39,6 @@
 	
 *************
 * BEGIN CODE
-		gen lawChangeYear = .
-
 		* Default is .
 		gen cncChange = . 
 	
