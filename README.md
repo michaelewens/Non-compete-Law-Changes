@@ -14,6 +14,17 @@
 
 [The do file](createCNCvariables.do) can be run in any program as `do createCNCvariables.do` after you update the two global variables in the file.  The simple file creates the variable `cncChange` and `note_LawChange` for state-years with non-compete law changes.   See above for variable definitions.
 
+Alternatively, you can take the [csv file](https://github.com/michaelewens/noncompete_laws/blob/master/ncLawChanges.csv) and merge it into your data:
+
+```Stata
+* your data is temp.dta
+insheet using "stateYear.csv", comma clear
+tempfile state_years
+save `state_years'
+use temp, clear
+merge m:1 state year using `state_years', keep(1 3) nogen
+```
+
 ## R code
 
 [The R file](https://github.com/michaelewens/noncompete_laws/blob/master/createCNCvariables.R) can be loaded with `source` and will add two new variables to your data `cncChange` and `note_LawChange`.
