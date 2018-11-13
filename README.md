@@ -4,10 +4,11 @@
 
 ## CSV file
 
-Coming soon.  The csv file has three variables: `state`, `cncChange` and `year` defined as:
+[The csv file](https://github.com/michaelewens/noncompete_laws/blob/master/ncLawChanges.csv) has three variables: `year`,`state`, `cncChange` and `note_LawChange` defined as:
+* `year`: the year of the law change.  The best year to assume is _treated_ are years after this year.
 * `state`: two-letter abbreviation of state
 * `cncChange`: -1 or 1 which represents the incremental change in the strength of the law change.  -1 indicates a weakening, 1 indicates a strengthening, relative to the previous year.
-* `year`: the year of the law change.  The best year to assume is _treated_ are years after this year.
+* `note_LawChange`: string containing notes about the change and whether it was used in the original study.
 
 ## Stata code
 
