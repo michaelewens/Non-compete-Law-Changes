@@ -91,7 +91,7 @@
  		replace cncChange = 1 if $stateVariable == "WI" & $yearVariable == 2009
 
 		* Alabama
- 		replace cncChange = 1 if $stateVariable == "NH" & $yearVariable == 2016
+ 		replace cncChange = 1 if $stateVariable == "AL" & $yearVariable == 2016
 
 
  		*----------------------------*
