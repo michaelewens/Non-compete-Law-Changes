@@ -2,7 +2,7 @@
 
 [Ewens](https://ewens.caltech.edu/research/) and [Marx](http://mattmarx.com/) ([2017](https://academic.oup.com/rfs/article/31/4/1532/4604800?guestAccessKey=c295e5d3-ff6e-4257-8dea-4d3167a9a7f5)) use a series of state-level law changes in the U.S. from 1995--2016 to study the impact of founder replacement on startup outcomes.   The data and code below allow others to incorporate the law changes into their research.
 
-## CSV file
+## CSV file (data)
 
 [The csv file](https://github.com/michaelewens/noncompete_laws/blob/master/ncLawChanges.csv) has three variables: `year`,`state`, `cncChange` and `note_LawChange` defined as:
 * `year`: the year of the law change.  The best year to assume is _treated_ are years after this year.
