@@ -18,10 +18,13 @@ Alternatively, you can take the [csv file](https://github.com/michaelewens/nonco
 
 ```Stata
 * your data is temp.dta
+* Load up the csv and save as local tempfile
 insheet using "stateYear.csv", comma clear
 tempfile state_years
 save `state_years'
+* Load up your main data
 use temp, clear
+* Merge on the CNC law changes
 merge m:1 state year using `state_years', keep(1 3) nogen
 ```
 
