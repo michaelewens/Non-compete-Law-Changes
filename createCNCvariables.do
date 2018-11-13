@@ -47,6 +47,9 @@
 		* Variable to hold notes
 		gen note_LawChange = ""		
 
+		* Alabama
+ 		replace cncChange = 1 if $stateVariable == "AL" & $yearVariable == 2016
+
 		* Colorado
 		replace cncChange = 1 if $stateVariable == "CO" & $yearVariable == 2011
 
@@ -90,9 +93,7 @@
 		* Wisconsin
  		replace cncChange = 1 if $stateVariable == "WI" & $yearVariable == 2009
 
-		* Alabama
- 		replace cncChange = 1 if $stateVariable == "AL" & $yearVariable == 2016
-
+	
 
  		*----------------------------*
 		* The following law changes were not used in Ewens and Marx for reasons specific to that research design.
@@ -123,8 +124,8 @@
  		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "MT" & $yearVariable == 2009
 
 		* New York
-		replace cncChange = -1 if $stateVariable == "NY" & $yearVariable == 2009
- 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NY" & $yearVariable == 2009
+		replace cncChange = -1 if $stateVariable == "NY" & $yearVariable == 1994
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NY" & $yearVariable == 1994
 
 		* Rhode Island (Only medical)
 		replace cncChange = -1 if $stateVariable == "RI" & $yearVariable == 2016
