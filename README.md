@@ -44,7 +44,7 @@ newData<- merge(state_years, currentData, by.x=c("state", "year"), by.y=c("state
 
 ## Python code
 
-Some sample code to import the csv and merge onto your existing data:
+Some sample code to import the [csv file](https://github.com/michaelewens/noncompete_laws/blob/master/ncLawChanges.csv) and merge onto your existing data:
 
 ```python
 import numpy as np
