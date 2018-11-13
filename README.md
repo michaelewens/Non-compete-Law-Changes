@@ -44,7 +44,18 @@ newData<- merge(state_years, currentData, by.x=c("state", "year"), by.y=c("state
 
 ## Python code
 
-Coming soon.
+Some sample code to import the csv and merge onto your existing data:
+
+```python
+import numpy as np
+import pandas as pd
+
+# Assume that you have currentData as your data with 'state' and 'year'
+stateYear = read_csv("stateYear.csv")
+newData = pd.merge(currentData,
+                 stateYears,
+                 on=['state','year'])
+```
 
 ## Citation
 
