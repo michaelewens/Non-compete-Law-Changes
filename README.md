@@ -1,6 +1,6 @@
 # Incorporate non-compete law changes from Ewens and Marx (2017, RFS)
 
-[Ewens](https://ewens.caltech.edu/research/) and [Marx](http://mattmarx.com/ (2017) [paper](https://academic.oup.com/rfs/article/31/4/1532/4604800?guestAccessKey=c295e5d3-ff6e-4257-8dea-4d3167a9a7f5) use a series of state-level law changes in the U.S. from 1995--2016 to study the impact of founder replacement on startup outcomes.  
+[Ewens](https://ewens.caltech.edu/research/) and [Marx](http://mattmarx.com/) (2017) [paper](https://academic.oup.com/rfs/article/31/4/1532/4604800?guestAccessKey=c295e5d3-ff6e-4257-8dea-4d3167a9a7f5) use a series of state-level law changes in the U.S. from 1995--2016 to study the impact of founder replacement on startup outcomes.  
 
 ## CSV file
 
