@@ -3,7 +3,7 @@
 
 	Assign non-compete status by state-year.
 
-	Code assumes that the user's state-year data is already loaded. 
+	Code assumes that the user's state-level data is already loaded. 
 
 	Usage: do createCNCvars.do
 
@@ -15,10 +15,12 @@
 	Result: Creates 
 
 	`cncChange` = {-1,1} for the direction of the change in the law
-		-1 --> weaker
-		1 --> stronger
+		-1 --> weak
+		1 --> strong
+	`note_LawChange' = Short desc. if debate or differ from Ewens and Marx
 
-	Citation: Ewens, Michael, and Matt Marx. "Founder replacement and startup performance." The Review of Financial Studies 31.4 (2017): 1532-1565.
+	Citation: Ewens, Michael, and Matt Marx. "Founder replacement and startup performance." 
+	The Review of Financial Studies 31.4 (2017): 1532-1565.
 	
 	Contact: Michael Ewens, michael.ewens@gmail.com
 
@@ -39,9 +41,12 @@
 	
 *************
 * BEGIN CODE
+
 		* Default is .
-		gen cncChange = . 
-	
+		gen cncChange = .
+		* Variable to hold notes
+		gen note_LawChange = ""		
+
 		* Colorado
 		replace cncChange = 1 if $stateVariable == "CO" & $yearVariable == 2011
 
@@ -94,47 +99,59 @@
 
 		* Arkansas
  		replace cncChange = 1 if $stateVariable == "AR" & $yearVariable == 2016
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "AR" & $yearVariable == 2016
 
 		* From Ewens and Marx: "[...] Hawaii’s 2015 reform, which banned non-compete agreements in the IT industry, was explicitly taken up in order to foster entrepreneurial activity."
 
 		* Hawaii
-		 replace cncChange = -1 if $stateVariable == "HI" & $yearVariable == 2016
-	
+		replace cncChange = -1 if $stateVariable == "HI" & $yearVariable == 2015
+		replace note_LawChange = "From Ewens and Marx: '[...] Hawaii's 2015 reform, which banned non-compete agreements in the IT industry, was explicitly taken up in order to foster entrepreneurial activity.'" if $stateVariable == "HI" & $yearVariable == 2015
+
 		* From Ewens and Marx: "New York and New Mexico also weakened enforceability of non-compete agreements during our sample. The New York reform was specific to workers in the broadcasting industry which is not highly relevant to venture capital activity. Similarly, the reform in New Mexico was specific to physicians. Neither is included in our analysis."
 
 		
 		* Michigan
 		replace cncChange = 1 if $stateVariable == "MI" & $yearVariable == 1985
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "MI" & $yearVariable == 1985
 
 		* MA
 		replace cncChange = -1 if $stateVariable == "MA" & $yearVariable == 2018
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "MA" & $yearVariable == 2018
 
 		* Montana
 		replace cncChange = -1 if $stateVariable == "MT" & $yearVariable == 2009
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "MT" & $yearVariable == 2009
 
 		* New York
 		replace cncChange = -1 if $stateVariable == "NY" & $yearVariable == 2009
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NY" & $yearVariable == 2009
 
 		* Rhode Island (Only medical)
 		replace cncChange = -1 if $stateVariable == "RI" & $yearVariable == 2016
+ 		replace note_LawChange = "Only impacted the medical industry. Not used in Ewens and Marx (2017)" if $stateVariable == "RI" & $yearVariable == 2016
 
 		* New Hampshire (Medical)
 		replace cncChange = -1 if $stateVariable == "NH" & $yearVariable == 2016
+ 		replace note_LawChange = "Only impacted the medical industry.  Not used in Ewens and Marx (2017)" if $stateVariable == "NH" & $yearVariable == 2016
 
 		* Nevada
 		replace cncChange = 1 if $stateVariable == "NV" & $yearVariable == 2016
-		
+		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NV" & $yearVariable == 2016
+
 		* Idaho "ID 2016 is hard to classify. On the one hand, NDs are limited to 18 months; on the other hand, they are presumptively enforceable for executives."
 		*replace cncChange = 1 if $stateVariable == "ID" & $yearVariable == 2016
 	
 		* CT (Medical)
 		replace cncChange = 1 if $stateVariable == "CT" & $yearVariable == 2016
-	
+		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "CT" & $yearVariable == 2016
+
 		* Wisconsin
 		replace cncChange = -1 if $stateVariable == "WI" & $yearVariable == 2015
+		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "WI" & $yearVariable == 2015
 		
 		* Utah
 		replace cncChange = -1 if $stateVariable == "UT" & $yearVariable == 2016
+		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "UT" & $yearVariable == 2016
 	
 	**** END
 	****************************
