@@ -1,4 +1,5 @@
 year,state,cncChange,note_LawChange
+2016,"AL",1,""
 2016,"AR",1,"Not used in Ewens and Marx (2017)"
 2011,"CO",1,""
 2016,"CT",1,"Not used in Ewens and Marx (2017)"
@@ -15,7 +16,7 @@ year,state,cncChange,note_LawChange
 2011,"NH",-1,""
 2016,"NH",-1,"Only impacted the medical industry.  Not used in Ewens and Marx (2017)"
 2016,"NV",1,"Not used in Ewens and Marx (2017)"
-2009,"NY",-1,"Not used in Ewens and Marx (2017)"
+1994,"NY",-1,"Not used in Ewens and Marx (2017)"
 2004,"OH",1,""
 2008,"OR",-1,""
 2016,"RI",-1,"Only impacted the medical industry. Not used in Ewens and Marx (2017)"
