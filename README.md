@@ -29,6 +29,16 @@ merge m:1 state year using `state_years', keep(1 3) nogen
 
 [The R file](https://github.com/michaelewens/noncompete_laws/blob/master/createCNCvariables.R) can be loaded with `source` and will add two new variables to your data `cncChange` and `note_LawChange`.
 
+Alternatively, you can take the [csv file](link) and merge it into your data:
+
+```R
+# load the csv file and merge it into your data:
+state_years <- read.csv("stateYear.csv", stringsAsFactors=FALSE)
+# your data is currentData
+# new data after merge
+newData<- merge(state_years, currentData, by.x=c("state", "year"), by.y=c("state_yourData", "year_yourData"), all.y = TRUE)
+```
+
 ## Python code
 
 Coming soon.
