@@ -35,10 +35,10 @@ merge m:1 state year using `state_years', keep(1 3) nogen
 Alternatively, you can take the [csv file](https://github.com/michaelewens/noncompete_laws/blob/master/ncLawChanges.csv) and merge it into your data:
 
 ```R
-# load the csv file and merge it into your data:
+# Load the csv file
 state_years <- read.csv("stateYear.csv", stringsAsFactors=FALSE)
-# your data is currentData
-# new data after merge
+# your data is currentData 
+# Merge onto the current data.  Result is newData with new columns.
 newData<- merge(state_years, currentData, by.x=c("state", "year"), by.y=c("state_yourData", "year_yourData"), all.y = TRUE)
 ```
 
