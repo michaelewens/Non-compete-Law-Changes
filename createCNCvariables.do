@@ -33,17 +33,17 @@
 	*****
 	* CHANGE TO YOUR VARIABLE NAMES
 	* State variable
-	global stateVariable = state
+	global stateVariable state
 	* Year Variable
-	global yearVariable = year
+	global yearVariable year
 
 	
 *************
 * BEGIN CODE
 		gen lawChangeYear = .
 
-		* Default is 0
-		gen cncChange = 0 
+		* Default is .
+		gen cncChange = . 
 	
 		* Colorado
 		replace cncChange = 1 if $stateVariable == "CO" & $yearVariable == 2011
