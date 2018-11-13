@@ -35,4 +35,4 @@ Coming soon.
   publisher={Oxford University Press}
 }`
 
-Ewens, Michael, and Matt Marx. "Founder replacement and startup performance." The Review of Financial Studies 31.4 (2017): 1532-1565.
+Ewens, Michael, and Matt Marx. "[Founder replacement and startup performance](https://academic.oup.com/rfs/article/31/4/1532/4604800?guestAccessKey=c295e5d3-ff6e-4257-8dea-4d3167a9a7f5)." _The Review of Financial Studies_ 31.4 (2017): 1532-1565.
