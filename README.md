@@ -12,11 +12,11 @@
 
 ## Stata code
 
-[The do file](createCNCvariables.do) can be run in any program as `do createCNCvariables.do` after you update the two global variables in the file.  The simple file creates the variable `lawChangeYear` and `cncChange` for state-years with non-compete law changes.   See above for variable definitions.
+[The do file](createCNCvariables.do) can be run in any program as `do createCNCvariables.do` after you update the two global variables in the file.  The simple file creates the variable `cncChange` and `note_LawChange` for state-years with non-compete law changes.   See above for variable definitions.
 
 ## R code
 
-Coming soon.
+[The R file](https://github.com/michaelewens/noncompete_laws/blob/master/createCNCvariables.R) can be loaded with `source` and will add two new variables to your data `cncChange` and `note_LawChange`.
 
 ## Python code
 
