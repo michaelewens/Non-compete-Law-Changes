@@ -148,7 +148,7 @@
 	
 		* CT (Medical)
 		replace cncChange = 1 if $stateVariable == "CT" & $yearVariable == 2016
-		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "CT" & $yearVariable == 2016
+		replace note_LawChange = "Only medical. Not used in Ewens and Marx (2017)" if $stateVariable == "CT" & $yearVariable == 2016
 
 		* Wisconsin
 		replace cncChange = -1 if $stateVariable == "WI" & $yearVariable == 2015
