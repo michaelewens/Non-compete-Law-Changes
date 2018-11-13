@@ -108,7 +108,6 @@
 		replace cncChange = -1 if $stateVariable == "HI" & $yearVariable == 2015
 		replace note_LawChange = "From Ewens and Marx: '[...] Hawaii's 2015 reform, which banned non-compete agreements in the IT industry, was explicitly taken up in order to foster entrepreneurial activity.'" if $stateVariable == "HI" & $yearVariable == 2015
 
-		* From Ewens and Marx: "New York and New Mexico also weakened enforceability of non-compete agreements during our sample. The New York reform was specific to workers in the broadcasting industry which is not highly relevant to venture capital activity. Similarly, the reform in New Mexico was specific to physicians. Neither is included in our analysis."
 
 		
 		* Michigan
@@ -122,10 +121,15 @@
 		* Montana
 		replace cncChange = -1 if $stateVariable == "MT" & $yearVariable == 2009
  		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "MT" & $yearVariable == 2009
-
+		
+		* From Ewens and Marx: "New York and New Mexico also weakened enforceability of non-compete agreements 
+		* during our sample. The New York reform was specific to workers in the broadcasting industry which is 
+		* not highly relevant to venture capital activity. 
+		
 		* New York
 		replace cncChange = -1 if $stateVariable == "NY" & $yearVariable == 1994
- 		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NY" & $yearVariable == 1994
+ 		replace note_LawChange = "Not used in Ewens and Marx (2017).  'The New York reform was specific to workers in the broadcasting industry which is 
+		not highly relevant to venture capital activity. '" if $stateVariable == "NY" & $yearVariable == 1994
 
 		* Rhode Island (Only medical)
 		replace cncChange = -1 if $stateVariable == "RI" & $yearVariable == 2016
