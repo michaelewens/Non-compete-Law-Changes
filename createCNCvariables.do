@@ -15,10 +15,9 @@
 	Result: Creates 
 
 	`lawChangeYear' = year of states law change
-	`cncChange` = {-1,0,1} for the direction of the change in the law
-		-1 --> weak
-		0 --> "standard"
-		1 --> strong
+	`cncChange` = {-1,1} for the direction of the change in the law
+		-1 --> weaker
+		1 --> stronger
 
 	Citation: Ewens, Michael, and Matt Marx. "Founder replacement and startup performance." The Review of Financial Studies 31.4 (2017): 1532-1565.
 	
