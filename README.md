@@ -48,7 +48,8 @@ Coming soon.
 
 ## Citation
 
-`@article{ewensMarx2017founder,
+```Latex
+@article{ewensMarx2017founder,
   title={Founder replacement and startup performance},
   author={Ewens, Michael and Marx, Matt},
   journal={The Review of Financial Studies},
@@ -57,6 +58,7 @@ Coming soon.
   pages={1532--1565},
   year={2017},
   publisher={Oxford University Press}
-}`
+}
+```
 
 Ewens, Michael, and Matt Marx. "[Founder replacement and startup performance](https://academic.oup.com/rfs/article/31/4/1532/4604800?guestAccessKey=c295e5d3-ff6e-4257-8dea-4d3167a9a7f5)." _The Review of Financial Studies_ 31.4 (2017): 1532-1565.
