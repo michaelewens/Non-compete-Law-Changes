@@ -10,7 +10,7 @@ Coming soon.
 
 Coming soon.
 
-## Pytyhon code
+## Python code
 
 ## Citation
 
