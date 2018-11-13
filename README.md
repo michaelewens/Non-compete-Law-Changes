@@ -53,7 +53,7 @@ import pandas as pd
 # Assume that you have currentData as your data with 'state' and 'year'
 stateYear = read_csv("stateYear.csv")
 newData = pd.merge(currentData,
-                 stateYears,
+                 stateYear,
                  on=['state','year'])
 ```
 
