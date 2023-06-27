@@ -140,8 +140,10 @@
  		replace note_LawChange = "Only impacted the medical industry.  Not used in Ewens and Marx (2017)" if $stateVariable == "NH" & $yearVariable == 2016
 
 		* Nevada
-		replace cncChange = 1 if $stateVariable == "NV" & $yearVariable == 2016
-		replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NV" & $yearVariable == 2016
+		* Removed June 2023: Golden mostly reaffirmed the reasonableness test (no change) but did curb the use of the nefarious “reformation” practice, 
+		* so if anything it should be a slight weakening.  Also, this chnage was not used in the paper. 
+		* replace cncChange = 1 if $stateVariable == "NV" & $yearVariable == 2016
+		* replace note_LawChange = "Not used in Ewens and Marx (2017)" if $stateVariable == "NV" & $yearVariable == 2016
 
 		* Idaho "ID 2016 is hard to classify. On the one hand, NDs are limited to 18 months; on the other hand, they are presumptively enforceable for executives."
 		*replace cncChange = 1 if $stateVariable == "ID" & $yearVariable == 2016
